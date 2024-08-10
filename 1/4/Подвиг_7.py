@@ -18,7 +18,7 @@ y_pred = model_a(x, w)
 plt.scatter(x=x, y=Y, color='blue')
 plt.plot(x, y_pred, color='red')
 
-poly = PolynomialFeatures(4, include_bias=True)  # возможно degree = 5? Или переобучение?
+"""poly = PolynomialFeatures(4, include_bias=True)  # возможно degree = 5? Или переобучение?
 x_poly = poly.fit_transform(x.reshape(-1, 1), Y)
 
 model = LinearRegression()
@@ -26,5 +26,5 @@ model.fit(x_poly, Y)
 
 sklearn_y_pred = model.predict(x_poly)
 print(y_pred, sklearn_y_pred)
-plt.plot(x, sklearn_y_pred)
+plt.plot(x, sklearn_y_pred)"""
 plt.show()
